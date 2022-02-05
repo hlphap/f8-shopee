@@ -29,15 +29,16 @@
             <li class="nav__item nav__item--separate">
               <a href="" class="nav__link">Trở thành Người bán Shopee</a>
             </li>
-            <li class="nav__item nav__item--has-qr nav__item--separate">Tải ứng dụng
-              <div class="header__qr">
-                <img src="./assets/img/qr-download.png" alt="QR Download" class="header__qr-img">
-                <div class="header__qr-download">
-                  <a href="" class="header__qr-download-item">
-                    <img src="./assets/img/app-store-download.png" alt="" class="header__qr-download-img">
+            <li class="nav__item nav__item--has-qr nav__item--separate">
+              Tải ứng dụng
+              <div class="nav__qr">
+                <img src="./assets/img/qr-download.png" alt="QR Download" class="nav__qr-img" />
+                <div class="nav__qr-download">
+                  <a href="" class="nav__qr-download-item">
+                    <img src="./assets/img/app-store-download.png" alt="" class="nav__qr-download-img" />
                   </a>
-                  <a href="" class="header__qr-download-item">
-                    <img src="./assets/img/ch-play-download.png" alt="" class="header__qr-download-img">
+                  <a href="" class="nav__qr-download-item">
+                    <img src="./assets/img/ch-play-download.png" alt="" class="nav__qr-download-img" />
                   </a>
                 </div>
               </div>
@@ -53,11 +54,52 @@
             </li>
           </ul>
           <ul class="nav__list">
-            <li class="nav__item">
+            <li class="nav__item nav__item--has-notify">
               <a href="" class="nav__link">
                 <i class="far fa-bell nav__icon"></i>
                 Thông báo
               </a>
+              <div class="nav__notify">
+                <h3 class="nav__notify-header">Thông báo mới nhận</h3>
+                <ul class="nav__notify-list">
+                  <li class="nav__notify-item nav__notify-item--seen">
+                    <a href="" class="nav__notify-link">
+                      <img src="./assets/img/noti-img.jfif" alt="" class="nav__notify-img" />
+                      <div class="nav__notify-info">
+                        <span class="nav__notify-name">Mỹ phẩm Ohui chính hãng</span>
+                        <span class="nav__notify-description">
+                          Mô tả của mỹ phẩm Ohui chính hãng
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav__notify-item nav__notify-item--seen">
+                    <a href="" class="nav__notify-link">
+                      <img src="./assets/img/noti-img.jfif" alt="" class="nav__notify-img" />
+                      <div class="nav__notify-info">
+                        <span class="nav__notify-name">Mỹ phẩm Ohui chính hãng</span>
+                        <span class="nav__notify-description">
+                          Mô tả của mỹ phẩm Ohui chính hãng
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav__notify-item">
+                    <a href="" class="nav__notify-link">
+                      <img src="./assets/img/noti-img.jfif" alt="" class="nav__notify-img" />
+                      <div class="nav__notify-info">
+                        <span class="nav__notify-name">Mỹ phẩm Ohui chính hãng</span>
+                        <span class="nav__notify-description">
+                          Mô tả của mỹ phẩm Ohui chính hãng
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="nav__notify-footer">
+                  <a href="" class='nav__notify-see-all'>Xem tất cả</a>
+                </div>
+              </div>
             </li>
             <li class="nav__item">
               <a href="" class="nav__link">
@@ -77,6 +119,65 @@
     </header>
     <div class="container">This is container</div>
     <footer class="footer">This is footer</footer>
+
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__body">
+        <!-- TODO Modal Authenticated = login + register-->
+        <div class="auth-form">
+          <!-- TODO Header -->
+          <div class="auth-form__header">
+            <h3 class="auth-form__heading">Đăng ký</h3>
+            <span class="auth-form__switch-btn">Đăng nhập</span>
+          </div>
+
+          <!-- TODO Body -->
+          <div class="auth-form__body">
+            <div class="auth-form__form">
+              <div class="auth-form__group">
+                <input type="text" class="auth-form__input" placeholder="Nhập email">
+              </div>
+              <div class="auth-form__group">
+                <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu">
+              </div>
+              <div class="auth-form__group">
+                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+              </div>
+            </div>
+
+            <div class="auth-form__aside">
+              <p class="auth-form__policy-text">Bằng việc đăng ký bạn đã đồng ý với Shopee về
+                <a href="" class="auth-form__text-link">Điều khoảng dịch vụ</a>
+                &
+                <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+              </p>
+            </div>
+
+            <div class="auth-form__controls">
+              <button class="btn btn--normal">TRỞ LẠI</button>
+              <button class="btn btn--primary">ĐĂNG KÝ</button>
+            </div>
+          </div>
+
+          <!-- TODO Modal footer -->
+          <div class="auth-form__footer">
+            <a class="btn btn--size-s auth-form__footer--facebook btn--with-icon">
+              <i class="fab fa-facebook-square auth-form__footer-icon"></i>
+              <span class="auth-form__footer-text">
+                Kết nối với Facebook
+              </span>
+            </a>
+            <a class="btn btn--size-s auth-form__footer--google btn--with-icon">
+              <i class="fab fa-google auth-form__footer-icon"></i>
+              <span class="auth-form__footer-text">
+                Kết nối với Google
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 </body>
 
