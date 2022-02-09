@@ -4,6 +4,7 @@
   --text-color: #333;
   --primary-color: #f53e2d;
   --border-color: #dbdbdb;
+  --star-gold-color: #f2cb2c;
 
   --header-height: 120px;
   --nav-height: 34px;
@@ -35,17 +36,22 @@ html {
 .grid__row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -12px;
-  margin-right: -12px;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 
 .grid__col-2 {
-  padding: 0 12px;
+  padding: 0 5px;
   width: 16.666%;
 }
 
+.grid__col-2-4 {
+  padding: 0 5px;
+  width: 20%;
+}
+
 .grid__col-10 {
-  padding: 0 12px;
+  padding: 0 5px;
   width: 83.334%;
 }
 
@@ -85,7 +91,7 @@ html {
   cursor: pointer;
   border-radius: 2px;
   font-size: 1.4rem;
-  padding: 0 12px;
+  padding: 0 5px;
   line-height: 1.6rem;
   outline: none;
   background-color: var(--white-color);
@@ -115,7 +121,7 @@ html {
   height: 34px;
   cursor: pointer;
   border-radius: 2px;
-  padding: 0 12px;
+  padding: 0 5px;
   outline: none;
   background-color: var(--white-color);
   display: inline-flex;
